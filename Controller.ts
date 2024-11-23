@@ -40,7 +40,7 @@ export class Controller {
   constructor() {
     this.socket = dgram.createSocket('udp4');
     this.server = http.createServer();
-    // DEVICE
+
     this.socket.bind(1900, () => this.socket.addMembership(this.MULTICAST_IP, this.DEVICE_IP));
 
     this.socket.on('error', (err) => {
@@ -64,7 +64,7 @@ export class Controller {
   public register(button: string, handler: () => void) {
     this.registered_handlers[button] = handler;
   }
-  // to handle this issue
+
   private requestHandler = (req: any, res: http.ServerResponse) => { 
     console.log(`Request from: ${req.url}`);
     if (req.url === '/') {
@@ -131,5 +131,5 @@ function getIpAddress() {
           iface = key
       };
   })
-  return {ipAddress, iface};
+  return { ipAddress, iface };
 }
