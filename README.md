@@ -1,0 +1,1 @@
+This is a JavaScript implementation to Emulate Roku device to control Govee Strip Light. The idea behind this is to use pure JavaScript and no external packages to reduce maintenance. This currently runs in Raspberry Pi v3 with RaspberryPi OS. 
