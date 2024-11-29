@@ -1,0 +1,13 @@
+{
+  "name": "govee-sofabaton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "nohup": "nohup node index.js &",
+    "start": "node index.js"
+  },
+  "keywords": ["govee", "sofabaton"],
+  "author": "Sree Ambat",
+  "license": "ISC",
+  "description": "Allows to control Govee LED lights using SofaBaton"
+}
